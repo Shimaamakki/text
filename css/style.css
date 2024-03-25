@@ -1,0 +1,155 @@
+body {
+    perspective: 700px;
+background-color: rgba(0, 0, 0, 0.89);
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+    /* text-shadow: 2px 2px 5px rgb(247, 241, 241); */
+
+    color: antiquewhite;
+    font-size: 30px;
+    text-transform: capitalize;
+
+}
+ .line{
+    width: 40px;
+    height: 3px;
+    background-color: #f1e9b7;
+    margin: auto;
+    border-radius: 2px;
+    transition: 0.3s;
+   box-shadow: 2px 2px 5px rgb(247, 241, 241);
+ }
+ .line:hover{
+    width: 100px;
+ }
+.parent-hajj{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+}
+
+section,
+.front,
+.back {
+    width: 300px;
+    height: 450px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+section {
+    transition: 0.3s;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+
+.front {
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.back {
+    
+    background-color: rgb(49, 49, 47);
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+section:hover {
+    transform: rotateY(180deg);
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.front .tex {
+    position: absolute;
+    background-color: #00000073;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    padding: 12px;
+    color: white;
+    align-items: center;
+    border-radius: 15px;
+    text-align: right;
+}
+
+.front .left span {
+    color: rgb(255, 241, 216);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    
+
+}
+.front .left ul{
+    text-align: center;
+}
+
+.front .left ul li {
+    color: gold;
+  
+
+}
+
+.back h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+}
+.back .detiles{
+    margin: 20px 0px;
+    align-items: center;
+}
+.back .detiles ul{
+    margin-left: 70px;
+}
+.back .detiles ul li {
+    color: gold;
+  
+
+}
+.back .detiles span{
+    padding-left: 8px;
+    font-size: 20px;
+    color: rgb(250, 248, 243);
+margin-left: 100px;}
+
+
+.back p{
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: right;
+    
+}
+.back button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    background-color: #ab8620;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+
+
+
+
